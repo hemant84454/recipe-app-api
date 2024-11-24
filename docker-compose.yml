@@ -1,4 +1,3 @@
-version: "3.9"
 
 services:
   app:
@@ -9,5 +8,5 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - "./recipe_app:/recipe_app"
+      - "./app:/app"
     command: sh -c "python manage.py runserver 0.0.0.0:8000"
